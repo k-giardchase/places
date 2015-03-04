@@ -14,7 +14,7 @@
     {% endif %}
 
             <form action='/places' method='post'>
-                <label for="city_name">City name</label>
+                <label for='city_name'>City name</label>
                 <input id='city_name' name='city_name' type='text'>
                 <button type='submit'>Add City</button>
             </form>

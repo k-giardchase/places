@@ -3,8 +3,8 @@
     <title>To Do List</title>
 </head>
 <body>
-    <h1>You created a task!</h1>
-    <!--<p>{{ newcity.getDescription }}</p> -->
-    <p><a href='/'>View your list of things to do.</a></p>
+    <h1>You visited a new place!</h1>
+    <p>{{ city.getCityName }}</p>
+    <p><a href='/'>View your list of places you've visited.</a></p>
 </body>
 </html>
