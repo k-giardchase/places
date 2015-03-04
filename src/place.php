@@ -1,6 +1,6 @@
 <?php
 
-    class Places
+    class Place
     {
         private $city_name;
 
@@ -26,7 +26,7 @@
 
         static function getAll()
         {
-            return $_SESSION['list_of_tasks'];
+            return $_SESSION['list_of_cities'];
         }
 
 
