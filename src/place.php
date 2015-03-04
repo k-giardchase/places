@@ -4,7 +4,7 @@
     {
         private $city_name;
 
-        function __contruct($user_city_name)
+        function __construct($user_city_name)
         {
             $this->city_name = $user_city_name;
         }
