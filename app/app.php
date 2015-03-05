@@ -15,14 +15,14 @@
 
     $app->get("/", function () use ($app) {
 
-        return $app['twig']->render('places.php', array('places' => Place::getAll()));
+        return $app['twig']->render('places.twig', array('places' => Place::getAll()));
 
     });
 
     $app->post("/places", function () use ($app) {
-        $city = new Place($_POST['city_name']);
+        $city = new Place($_POST['city_name'], $_POST['date']);
         $city->save();
-        return $app['twig']->render('create_city.php', array('newplace' => $city));
+        return $app['twig']->render('create_city.twig', array('newplace' => $city));
     });
 
     $app->post("/delete_city", function() use ($app){

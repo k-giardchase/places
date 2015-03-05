@@ -9,13 +9,21 @@
         <ul>
             {% for place in places %}
                 <li>{{ place.getCityName }}</li>
+                <li>{{ place.getDate }}</li>
             {% endfor %}
+
         </ul>
     {% endif %}
 
             <form action='/places' method='post'>
+                <div class='form_group'>
                 <label for='city_name'>City name</label>
                 <input id='city_name' name='city_name' type='text'>
+                </div>
+                <div class='form_group'>
+                <label for='date'>Date</label>
+                <input id='date' name='date' type='text'>
+                </div>
                 <button type='submit'>Add City</button>
             </form>
 
